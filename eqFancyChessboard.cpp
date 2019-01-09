@@ -1,10 +1,3 @@
-//  main.cpp
-//  Fancy Chessboard
-//
-//  Created by David Futran on 10/29/14.
-//  Copyright (c) 2014 David. All rights reserved.
-//
-
 #include <iostream>
 #include <cstdlib>
 #include <cmath>
@@ -130,14 +123,10 @@ int main(){
                     c++;
                     break;
                 }//end of if(ok(q,c)
-                
             }//end of while(q[c]<8)
-            
         }//end of while(c<8)
         print(q);// By this point a solution was reached so we print it
         from_backtrack=true;
         backtrack(c);//now to find other solutions, we backtrack
-    }//end of while(true)
-    
-    
+    }//end of while(true)    
 }//end of main()
