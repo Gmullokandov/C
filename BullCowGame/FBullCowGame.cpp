@@ -1,6 +1,5 @@
 #include "FBullCowGame.h"
 
-
 using namespace std;
 using FString = string;
 using int32 = int;
