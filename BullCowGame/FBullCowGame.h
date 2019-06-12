@@ -32,10 +32,12 @@ public:
 	EWordStatus CheckGuessValidity(FString) const; // TODO make a more rich return value
 
 	// counts bulls and cows, and increases turn # assuming valid guess
-	FBullCowCount SubmitGuess(FString);
+	FBullCowCount SubmitValidGuess(FString);
 
 private:
 	int32 MyCurrentTry;
-	int32 MyMaxTries;
 	FString MyHiddenWord;
+	bool bGameIsWon;
+	bool IsIsogram(FString) const;
+	bool IsLowercase(FString) const;
 };
